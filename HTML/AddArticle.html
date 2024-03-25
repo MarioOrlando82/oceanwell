@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Article - OceanWell</title>
+    <link rel="stylesheet" href="../CSS/AddArticle.css" />
+    <link
+      rel="shortcut icon"
+      href="../Aset/Logo/favicon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <img src="../Aset/Logo/OceanWell's Logo.png" class="logo" alt="" />
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Donate</a></li>
+          <li><a href="#">Volunteer</a></li>
+          <li><a href="#">Articles</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Register</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div id="main">
+      <div class="header-text">
+        <h1>Add article</h1>
+      </div>
+      <form action="#">
+        <div class="form-box">
+          <div class="form-column">
+            <div class="form-input">
+              <label for="title">Title</label>
+              <input type="text" id="title" name="title" />
+            </div>
+            <div class="form-input">
+              <label for="author">Author</label>
+              <input type="text" id="author" name="author" />
+            </div>
+            <div class="form-input">
+              <label for="date">Date</label>
+              <input type="text" id="date" name="date" />
+            </div>
+            <div class="form-input">
+              <label for="image">Image</label>
+              <input type="file" id="image" name="image" />
+            </div>
+          </div>
+          <div class="form-column">
+            <div class="form-input">
+              <label for="editor">Content</label>
+              <div id="editor"></div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-container">
+          <button type="submit">Add Article</button>
+        </div>
+      </form>
+    </div>
+    <script src="https://cdn.ckeditor.com/ckeditor5/41.2.1/classic/ckeditor.js"></script>
+    <script>
+      ClassicEditor.create(document.querySelector("#editor"), {
+        toolbar: [
+          "heading",
+          "|",
+          "bold",
+          "italic",
+          "link",
+          "bulletedList",
+          "numberedList",
+          "|",
+          "undo",
+          "redo",
+          "blockQuote",
+        ],
+      }).catch((error) => {
+        console.error(error);
+      });
+      ClassicEditor.replace;
+    </script>
+  </body>
+</html>
