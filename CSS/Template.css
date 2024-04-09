@@ -1,0 +1,74 @@
+:root {
+  --bg-primary: rgba(1, 40, 60, 255);
+  --bg-secondary: rgba(234, 230, 230, 255);
+  --bg-tertiary: rgba(245, 245, 245, 255);
+  --text-primary: rgba(1, 203, 225, 255);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  /* overflow-x: hidden; */
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-tertiary);
+  font-size: 16px;
+}
+
+/* navigation bar */
+nav {
+  width: 100%;
+  background-color: var(--bg-primary);
+}
+.navbar {
+  width: 90%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* navigation bar konten scr keseluruhan */
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+/* navigation bar kontennya */
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* navigation bar setelah */
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: width 0.5s, background-color 0.5s;
+  background-color: transparent;
+}
+
+/* navbar background kalo dihover */
+.navbar ul li:hover:after {
+  background-color: #01cbe1;
+  width: 100%;
+}
+
+/* navbar kalo dihover */
+.navbar ul li:hover a {
+  color: #01cbe1;
+}
+
+/* logo */
+.logo {
+  width: 120px;
+  cursor: pointer;
+}
