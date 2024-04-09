@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Add Article - OceanWell</title>
-    <link rel="stylesheet" href="../CSS/AddArticle.css" />
+    <link rel="stylesheet" href="../CSS/Template.css" />
     <link
       rel="shortcut icon"
       href="../Aset/Logo/favicon.png"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="../CSS/AddArticle.css">
   </head>
   <body>
     <nav>
@@ -26,7 +27,8 @@
       </div>
     </nav>
     <div id="main">
-      <div class="header-text">
+      <div class="content-container">
+              <div class="header-text">
         <h1>Add article</h1>
       </div>
       <form action="#">
@@ -51,7 +53,7 @@
           </div>
           <div class="form-column">
             <div class="form-input">
-              <label for="editor">Content</label>
+              <label for="editor" style="margin-bottom: 0.5rem;">Content</label>
               <div id="editor"></div>
             </div>
           </div>
@@ -82,5 +84,7 @@
       });
       ClassicEditor.replace;
     </script>
+      </div>
+    </div>
   </body>
 </html>
