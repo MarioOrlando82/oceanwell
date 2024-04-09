@@ -18,6 +18,17 @@ body {
   font-size: 16px;
 }
 
+#main {
+  height: 70%;
+  width: 80%;
+  background-color: var(--bg-secondary);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0.5rem;
+}
+
 /* navigation bar */
 nav {
   width: 100%;
