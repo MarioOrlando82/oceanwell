@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    box-sizing: border-box;
 }
 
 /* semua isi page login */
@@ -58,6 +57,7 @@
     margin: 15px;
     font-size: 50px;
     color: #01283C;
+    justify-content: center;
 }
 
 /* garis ----- */
@@ -81,7 +81,7 @@
     border: #D9D9D9;
     border-radius: 10px;
     height: 25px;
-    width: 100%;
+    width: 95.5%;
     background-color: #D9D9D9;
     padding: 5px 10px;
 }
