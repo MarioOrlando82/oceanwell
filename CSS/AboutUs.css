@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* navigation bar */
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding: 35px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #01283C;
+}
+
+/* logo */
+.logo{
+    width: 120px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+/* navigation bar konten scr keseluruhan */
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 18px;
+}
+
+/* navigation bar kontennya */
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* navigation bar setelah */
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: width 0.5s, background-color 0.5s;
+    background-color: transparent;
+}
+
+/* navbar background kalo dihover */
+.navbar ul li:hover:after{
+    background-color: #01CBE1;
+    width: 100%;
+}
+
+/* navbar kalo dihover */
+.navbar ul li:hover a{
+    color: #01CBE1;
+    
+}
+
+/* konten body yaitu tulisan */
+.body{
+    height: 100%;
+    background-image: url(../Aset/Background/AboutUs1.png);
+    padding: 20px 20px;
+}
+
+/* konten 1 keseluruhan */
+.body .konten1{
+    text-align: center;
+}
+
+/* konten 1 judul */
+.body .konten1 h1{
+    color: #01CBE1;
+    padding: 50px;
+    font-size: 55px;
+}
+
+/* konten 1 tulisannya */
+.body .konten1 p{
+    color: white;
+    padding-bottom: 60px;
+}
+
+/* judul kedua keseluruhan*/
+.body h2{
+    color: #01CBE1;
+    font-size: 35px;
+    padding-bottom: 30px;
+}
+
+/* tulisan konten keseluruhan */
+.body p{
+    color: white;
+    font-size: 25px;
+    word-spacing: 0.1cm;
+    padding: 30px 0px;
+}
+
+/* isi judul dan tulisan konten 2 */
+.body .konten2 {
+    text-align: left;
+    width: 1000px;
+    padding: 30px;
+}
+
+/* judul konten 2 */
+.body .konten2 h2{
+   padding-bottom: 30px;
+}
+
+/* isi judul dan tulisan konten 3 */
+.body .konten3 {
+    text-align: right;
+    padding: 30px;
+    width: 1000px;
+    margin-left: 800px;
+}
+
+/* isi judul dan tulisan konten 4 */
+.body .konten4 {
+    text-align: left;
+    width: 1000px;
+    padding: 30px;
+}
+
+/* Footer keseluruhan */
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+/* Text footer */
+.footer p{
+    color: white;
+    padding: 0px;
+    margin-top: 0px;
+}
