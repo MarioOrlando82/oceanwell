@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* semua konten di page donate detail */
+.banner{
+    width: 100%;
+    height: 100vh;
+    color: white;
+}
+
+/* navigation bar */
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding: 35px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #01283C;
+}
+
+/* logo */
+.logo{
+    width: 120px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+/* navigation bar konten scr keseluruhan */
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 18px;
+}
+
+/* navigation bar kontennya */
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* navigation bar setelah */
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: width 0.5s, background-color 0.5s;
+    background-color: transparent;
+}
+
+/* navbar background kalo dihover */
+.navbar ul li:hover:after{
+    background-color: #01CBE1;
+    width: 100%;
+}
+
+/* navbar kalo dihover */
+.navbar ul li:hover a{
+    color: #01CBE1;
+    
+}
+
+/* Footer keseluruhan */
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+    background-color: #01283C;
+}
+
+/* Text footer */
+.footer p{
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+/* konten list keseluruhan*/
+.body{
+    height: 78.7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* isi konten-konten list */
+.donateList{
+    background-color: rgb(236, 235, 234);
+    height: 650px;
+    width: 1500px;
+    border-radius: 8px;
+}
+
+/* isi konten list header */
+.donateList .header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    color: #01283C;
+}
+
+/* header donation list tulisannya */
+.donateList .header h1{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+/* tombol admin panel classnya */
+.donateList .button{
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+}
+
+/* tombol admin panel sendiri */
+.donateList .btn{
+    background-color: #01CBE1;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 180px;
+    height: 50px;
+    font-size:25px;
+}
+
+/* konten isi listnya */
+.donateList .isiList{
+    display: grid;
+    grid-template-columns: 50% 50%; 
+    grid-template-rows: auto auto;
+    gap: 10px; 
+    width: 100%; 
+}
+
+/* konten list 1 */
+.donateList .list1{
+    background-color: #E6F5FB;
+    width: 630px;
+    height: 200px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    border-radius: 9px;
+}
+
+/* konten list 2 */
+.donateList .list2{
+    background-color: #E6F5FB;
+    width: 630px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    border-radius: 9px;
+}
+
+/* konten list 3 */
+.donateList .list3{
+    background-color: #E6F5FB;
+    width: 630px;
+    height: 200px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    border-radius: 9px;
+}
+
+/* konten list 4 */
+.donateList .list4{
+    background-color: #E6F5FB;
+    width: 630px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    border-radius: 9px;
+}
+
+/* tulisan list semua */
+.donateList .tulisan{
+    padding: 0px 20px;
+    color: #01283C;
+}
+
+/* tulisan list h1*/
+.donateList h1{
+    font-size: 20px;
+}
+
+/* tulisan list h2 h3 h4 */
+.donateList  h2, h3{
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+/* space kosong di tulisan list */
+.donateList .emptyCell{
+    height: 64px;
+}
