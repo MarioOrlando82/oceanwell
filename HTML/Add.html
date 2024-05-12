@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Article - OceanWell</title>
+    <link rel="stylesheet" href="../CSS/Edit.css" />
+    <link rel="stylesheet" href="../CSS/NavFoot.css">
+    <link
+      rel="shortcut icon"
+      href="../Aset/Logo/favicon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+
+    <nav>
+      <div class="navbar">
+        <div class="nav-wrap">
+            <a href="./Home.html"><img src="../Aset/Logo/OceanWell's Logo.png" class="logo-nav" alt="" ></a>
+            <ul>
+              <li><a href="./AboutUs.html">About Us</a></li>
+              <li><a href="./Charity.html">Donate</a></li>
+              <li><a href="./Volunteer.html">Volunteer</a></li>
+              <li><a href="./Article.html">Articles</a></li>
+              <li><a href="./Login.html">Login</a></li>
+              <li><a href="./Register.html">Register</a></li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+
+    <div id="main">
+
+      <div class="header-text">
+        <label for="header"><h1>Add Page</h1></label>
+      </div>
+
+      <form action="#">
+        <div class="form-box">
+
+          <div class="form-column" id="column-left">
+            <div class="form-input">
+              <label for="title">Title</label>
+              <input type="text" id="title" name="title" value="Event Title"/>
+            </div>
+            <div class="form-input">
+              <label for="author">Organizer</label>
+              <input type="text" id="author" name="author" value="Event Organizer" />
+            </div>
+            <div class="form-input">
+              <label for="number">Number</label>
+              <input type="number" id="people" name="people" value=""/>
+            </div>
+            <div class="form-input">
+              <label for="image">Image</label>
+              <input type="file" id="image" name="image" value=""/>
+            </div>
+          </div>
+
+          <div class="form-column">
+            <div class="form-input">
+              <label for="editor">Content</label>
+              <div id="editor"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn-container">
+          <button type="submit" onclick="">Add</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="footer">
+        <img src="../Aset/Logo/OceanWell's Logo.png" class="logo-foot" alt="">
+        <p>© 2024 OceanWell All Rights Reserved</p>
+    </div>
+
+    <script src="https://cdn.ckeditor.com/ckeditor5/41.2.1/classic/ckeditor.js"></script>
+    <script>
+      ClassicEditor.create(document.querySelector("#editor"), {
+        toolbar: [
+          "heading",
+          "|",
+          "bold",
+          "italic",
+          "link",
+          "bulletedList",
+          "numberedList",
+          "|",
+          "undo",
+          "redo",
+          "blockQuote",
+        ],
+      }).catch((error) => {
+        console.error(error);
+      });
+      ClassicEditor.replace;
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,65 @@
+.Popup{
+    position: fixed;
+    top: 25%;
+    bottom: 25%;
+    right: 25%;
+    left: 25%;
+}
+
+.Popup-Wrapper{
+    background-color: #EAE6E6;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50vh;
+    height: 60vh;
+    justify-content: space-around;
+    margin: auto;
+    border-radius: 2vh;
+    border-style: solid;
+}
+
+.Logo-exit{
+   width: 40vh;
+   display: flex;
+   flex-direction: row-reverse;
+}
+
+.Logo-img img{
+    width: 15vh;
+}
+
+.Logo-pay img{
+    width: 35vh;
+}
+
+.Popup-text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+.Popup-text h3{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.Popup-text h2{
+    font-size: 24px;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+.Popup-text button{
+    margin-top: 2vh;
+    width: 40vh;
+    height: 6vh;
+    background-color: #01CBE1;
+    color: white;
+    border-style: none;
+    border-radius: 1vh;
+    font-size: 24px;
+    
+}
