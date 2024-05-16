@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer List - OceanWell</title>
+    <link rel="stylesheet" href="../CSS/NavFoot.css">
+    <link rel="stylesheet" href="../CSS/View.css">
+    <link rel="stylesheet" href="../CSS/Popup.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-wrap">
+            <a href="./Home.html"><img src="../Aset/Logo/OceanWell's Logo.png" class="logo-nav" alt="" ></a>
+            <ul>
+                <li><a href="./AboutUs.html">About Us</a></li>
+                <li><a href="./Charity.html">Donate</a></li>
+                <li><a href="./Volunteer.html">Volunteer</a></li>
+                <li><a href="./Article.html">Articles</a></li>
+                <li><a href="./Login.html">Login</a></li>
+                <li><a href="./Register.html">Register</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="Content-Box">
+
+        <div class="Gambar">
+            <img src="../Aset/List/Volunteer/img1.png" alt="">
+        </div>
+
+        <div class="Content-Wrapper">
+
+            <div class="Left-Content">
+                <p>Kami mengundang Anda untuk bergabung dalam acara 
+                    sukarelawan yang menginspirasi ini. Bersama-sama, 
+                    kita akan melakukan langkah nyata untuk membersihkan
+                     salah satu pantai terindah di dunia dari ancaman 
+                    sampah plastik dan limbah lainnya.</p>
+            </div>
+            <div class="Mid-Content">
+                <h3>Terkumpul</h3>
+                <div class="Target-Wrapper">
+                    <h2 id="CurrentNumber">50</h2>&nbsp;<h2>Dari</h2>&nbsp;<h2 id="TargetNumber">100 Orang</h2>
+                </div>
+            </div>
+
+            <div class="Right-Content">
+
+                <div class="InputWrapper">
+                    <input type="text" placeholder="Masukkan Jumlah Orang">
+                </div>
+
+                <div class="SubmitBtn">
+                    <Button type="button" onclick="openInv()">Apply</Button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="Popup" id="popup-invite">
+
+        <div class="Popup-Wrapper">
+
+            <div class="Logo-exit">
+                <img src="../Aset/Icon/X.png" alt="" onclick="closeInv()">
+            </div>
+
+            <div class="Logo-img">
+                <img src="../Aset/Icon/logos_whatsapp-icon.png" alt="">
+            </div>
+
+            <div class="Popup-text">
+                <h3>Silakan bergabung ke grup Whatsapp kami</h3>
+                <h2>https://chat.whatsapp.com/ Kjei8jU4ugp4Bv1d2HfpXk</h2>
+                <h3>Klik “Done” jika sudah bergabung ke grup Whatsapp</h3>
+                <button type="button" onclick="closeInv()">Done</button>
+            </div>
+
+            
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <img src="../Aset/Logo/OceanWell's Logo.png" class="logo-foot" alt="">
+        <p>© 2024 OceanWell All Rights Reserved</p>
+    </div>
+
+    <script>
+        function openInv() {
+            document.getElementById("popup-invite").style.display = "block";
+        }
+
+        function closeInv() {
+            document.getElementById("popup-invite").style.display = "none";
+        }
+    </script>
+</body>
+</html>

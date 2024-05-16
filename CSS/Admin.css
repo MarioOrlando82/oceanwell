@@ -1,0 +1,9 @@
+.DownContentWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.DownContentWrapper .RightContent img{
+    cursor: pointer;
+}
